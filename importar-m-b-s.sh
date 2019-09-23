@@ -1,5 +1,5 @@
 #!/bin/bash
-origem="databases"
+origem="./databases"
 read senha
  
 if [ -z $senha ]; then
