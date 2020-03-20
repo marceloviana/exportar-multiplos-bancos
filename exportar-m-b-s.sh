@@ -10,7 +10,7 @@ if [ -z $senha ]; then
         exit
 else
         echo "Testando senha..."
-        mysql -uroot -p$senha -e "show databases;" > /dev/null 2>&1
+        mysql -u$usuario -p$senha -e "show databases;" > /dev/null 2>&1
         if [ $? -ne 0 ];then
                 echo "Nao pode conectar ao Mysql com password informado."
                 exit
